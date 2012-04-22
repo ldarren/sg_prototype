@@ -1,0 +1,39 @@
+import "C:\Program Files\Microsoft SDKs\Windows\v6.1\Include\prsht.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.1\Include\mshtml.idl";
+import "c:\program files\microsoft sdks\windows\v6.1\include\dimm.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.1\Include\mshtmhst.idl";
+import "c:\program files\microsoft sdks\windows\v6.1\include\docobj.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.1\Include\exdisp.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.1\Include\objsafe.idl";
+
+[
+	object,
+	uuid(64AC281C-32C9-4359-AC2B-673B202F1F6A),
+	dual,
+	helpstring("IcityCtrl Interface"),
+	pointer_default(unique)
+] 
+#line 39 "d:\\project\\sg_prototype\\src\\axcity\\cityctrl.h"
+interface IcityCtrl : IDispatch {
+};
+
+
+[ version(1.0), uuid(C5FDF1B0-7FC9-4B01-BFA7-B19F7D89D353), helpstring("axcity 1.0 Type Library") ]
+library axcity
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		control,
+		version(1.0),
+		uuid(0ABDAB11-A970-4C01-A5A4-61EDA7B0AF30),
+		helpstring("cityCtrl Class")
+	] 
+#line 58 "d:\\project\\sg_prototype\\src\\axcity\\cityctrl.h"
+	coclass CcityCtrl {
+		[default]	interface IcityCtrl;
+	};
+
+}
+

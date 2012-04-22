@@ -1,0 +1,46 @@
+Introduction
+=============
+This is a guide for setting up the build environment for the vspore (a Twinity Singapore C++ client prototype) and web site
+
+Dependencies
+=============
++ Irrlicht (http://irrlicht.sourceforge.net/)
++ ICE (http://www.zeroc.com/)
++ Awesomium (http://princeofcode.com/awesomium.php#overview)
++ Ruby (http://www.ruby-lang.org/en/)
+
+Dependencies Setup
+====================
+Irrlicht
+---------
+1) get latest code from svn https://irrlicht.svn.sourceforge.net/svnroot/irrlicht/trunk or download sdk from http://sourceforge.net/project/showfiles.php?group_id=74339
+2) set system environment variable IRR_DIR to your irrlicht install path
+3) include your irrlicht path to your system environment path
+
+ICE
+----
+1) download latest sdk from http://www.zeroc.com/download.html#win32_msi
+2) set system environment variable ICE_DIR to your ICE install path
+3) include your ICE path to your system environment path
+
+Awesomium
+----------
+1) Awesomium sdk already integrated into vspore project, therefore no setup required
+
+Ruby
+------
+1) get the latest "one-click-installer" from http://www.ruby-lang.org/en/downloads/
+2) include your ruby path to your system environment path
+
+Build
+=======
+1) get latest vspore source code from svn://svn.metaversum.net/antares/sg_prototype
+2) set system environment variable VSPORE_DIR to your vspore path
+3) open and compile it with visual studio 8 or above (express version won't work)
+
+Run
+====
+1) go to vspore_path/bin/debug run server.exe
+2) go to vspore_path/bin/debug run city.exe
+3) to run vspore in internet explorer, open vspore_path/src/axcity/cityctrl.html with your IE browser
+4) to run vspore in firefox compatible browser, open vspore_path/src/npcity/npcity.html with your firefx compatible browser

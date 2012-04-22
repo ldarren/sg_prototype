@@ -1,0 +1,3 @@
+LIBRARY vspore
+EXPORTS
+   GetInterface @1
